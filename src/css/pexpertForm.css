@@ -1,0 +1,130 @@
+.form-container {
+    max-width: 36rem;
+    min-width: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    border: 2px solid #003B6D;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .form-heading {
+    min-width: 350px;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    min-width: 350px;
+
+  }
+  
+  .form-label {
+    display: block;
+    color: #003B6D;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.25rem;
+    background-color: #D3D3D3;
+  }
+  
+  .form-input.filled {
+    background-color: white;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #1D4ED8;
+  }
+  
+  .form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.25rem;
+    background-color: #D3D3D3;
+  }
+  
+  .form-select.filled {
+    background-color: white;
+  }
+  
+  .form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.25rem;
+    background-color: #D3D3D3;
+  }
+  
+  .form-select.filled {
+    background-color: white;
+  }
+
+  /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .seven-section {
+      flex-direction: column; /* Stack containers vertically */
+      height: auto; /* Adjust height dynamically */
+      padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .seven-left-container, .seven-right-container {
+      width: 100%; /* Full width for mobile */
+      padding: 1rem; /* Adjust padding */
+      box-sizing: border-box; /* Include padding in width */
+  }
+
+  h2 {
+      font-size: 1.75rem; /* Adjust font size for smaller screens */
+  }
+
+  .seven-description p {
+      font-size: 1rem; /* Adjust font size for readability */
+  }
+
+  .seven-pexpert-button {
+      padding: 0.5rem 1rem; /* Adjust button size */
+      font-size: 0.9rem; /* Adjust button font size */
+  }
+
+  .seven-image {
+      min-width: 350px;
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto; /* Center the image */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .seven-section {
+    padding: 1rem; /* Reduce padding further for mobile */
+  }
+
+  .seven-description p {
+    font-size: 0.85rem; /* Adjust paragraph font size for mobile */
+  }
+
+  .seven-image {
+    min-width: 350px; /* Reduce image size for mobile */
+  }
+}

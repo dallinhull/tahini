@@ -1,0 +1,213 @@
+/* ResponsiveNavbar.css */
+.navbar {
+  background-color: #6699CC;
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo styles */
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+/* Navigation content wrapper */
+.nav-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+.nav-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-content li {
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: #676767;
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: #003B6D;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* CTA Button styles */
+.cta-container {
+  margin-left: 2rem;
+}
+
+.consult-button {
+  background-color: white;
+  color: #6699CC;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.consult-button:hover {
+  background-color: #676767;
+  color: white;
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+  top: -6px;
+}
+
+.hamburger::after {
+  bottom: -6px;
+}
+
+.hamburger.active {
+  background-color: transparent;
+}
+
+.hamburger.active::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.active::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the hamburger menu */
+  }
+
+  .nav-content {
+    display: none; /* Hide the nav links by default */
+    position: absolute;
+    top: 80px; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    background-color: #6699CC;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .nav-content.active {
+    display: flex; /* Show the nav links when active */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width */
+  }
+
+  .nav-link {
+    padding: 1rem; /* Increase padding for easier tapping */
+    text-align: center; /* Center-align links */
+  }
+
+  .cta-container {
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+
+  .consult-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,117 @@
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+footer {
+  background-color: #6699CC; /* Footer background color */
+  color: white;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 450px;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  align-self: flex-start; /* Position logo at top-left */
+  margin-bottom: 2rem; /* Space between logo and the navigation */
+  margin-left: 40px;
+  background-color: white;
+}
+
+.footer-logo img {
+  max-width: 325px;
+  height: auto;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: auto;
+  gap: 3rem;
+  padding-left: 40px;
+}
+
+.footer-nav-item {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.footer-nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.footer-nav-item a:hover {
+  color: #D3D3D3; /* Hover effect for links */
+}
+
+.footer-nav-item ul {
+  list-style-type: none;
+}
+
+.footer-nav-item ul li {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.footer-nav-item li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav-item ul li a:hover {
+  color: #D3D3D3;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+    align-items: center; /* Center-align content */
+  }
+
+  .footer-logo {
+    align-self: center; /* Center the logo */
+    margin-left: 0; /* Remove left margin for centering */
+  }
+
+  .footer-nav {
+    flex-direction: column; /* Stack navigation vertically */
+    align-items: center; /* Center-align navigation items */
+    gap: 2rem; /* Adjust spacing between sections */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .footer-nav-item {
+    align-items: center; /* Center-align each navigation section */
+  }
+
+  .footer-nav-link {
+    text-align: center; /* Center-align links */
+  }
+
+  .footer-nav-item ul li a {
+    text-align: center; /* Center-align nested links */
+  }
+}
+
+  footer ul {
+    padding: 0px;
+  }

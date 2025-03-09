@@ -1,25 +1,21 @@
-
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../css/Navbar.css';
 import BalloonLogo from '../assets/balloon-dog.png';
-import { useLocation } from 'react-router-dom';
-
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const location = useLocation();
-
-
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo-container">
-          <a href="/"><img src={BalloonLogo} alt="Logo" className="logo" /></a>
+          <Link to="/"><img src={BalloonLogo} alt="Logo" className="logo" /></Link>
         </div>
 
         <button className="menu-toggle" onClick={toggleMenu}>
@@ -29,50 +25,47 @@ const Navbar = () => {
         <div className={`nav-content ${isMenuOpen ? 'active' : ''}`}>
           <ul className="nav-links">
             <li className="nav-item dropdown">
-            <a href="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</a>
+              <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
               <ul className="dropdown-menu">
-                <li><a href="/#our-mission">Mission</a></li>
-                <li><a href="/#pexpert-section">Pexpert</a></li>
-                <li><a href="/#benefits">Benefits</a></li>
-                <li><a href="/#adopt">Adopt</a></li>
+                <li><a href="/pet-project/#our-mission">Mission</a></li>
+                <li><a href="/pet-project/#pexpert-section">Pexpert</a></li>
+                <li><a href="/pet-project/#benefits">Benefits</a></li>
+                <li><a href="/pet-project/#adopt">Adopt</a></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
-            <a href="/dogs" className={`nav-link ${location.pathname.startsWith('/dogs') ? 'active' : ''}`}>Dogs</a>
+              <Link to="/dogs" className={`nav-link ${location.pathname.startsWith('/dogs') ? 'active' : ''}`}>Dogs</Link>
               <ul className="dropdown-menu">
-                <li><a href="/dogs/#intro">Info</a></li>
-                <li><a href="/dogs/#diet-exercise">Diet & Exercise</a></li>
-                <li><a href="/dogs/#groom-handling">Grooming & Handling</a></li>
-                <li><a href="/dogs/#vaccinations-medications">Vaccinations & Medications</a></li>
+                <li><a href="/pet-project/dogs/#intro">Info</a></li>
+                <li><a href="/pet-project/dogs/#diet-exercise">Diet & Exercise</a></li>
+                <li><a href="/pet-project/dogs/#groom-handling">Grooming & Handling</a></li>
+                <li><a href="/pet-project/dogs/#vaccinations-medications">Vaccinations & Medications</a></li>
               </ul>
             </li>
 
-
             <li className="nav-item dropdown">
-            <a href="/cats" className={`nav-link ${location.pathname.startsWith('/cats') ? 'active' : ''}`}>Cats</a>
+              <Link to="/cats" className={`nav-link ${location.pathname.startsWith('/cats') ? 'active' : ''}`}>Cats</Link>
               <ul className="dropdown-menu">
-                <li><a href="/cats/#info">Info</a></li>
-                <li><a href="/cats/#zero-to-four-weeks">Zero to Four Weeks</a></li>
-                <li><a href="/cats/#four-weeks-to-one-year">Four Weeks to One Year</a></li>
-                <li><a href="/cats/#one-year-to-seven-years">One Year to Seven Years</a></li>
-                <li><a href="/cats/#seven-years-and-older">Seven Years and Older</a></li>
+                <li><a href="/pet-project/cats/#info">Info</a></li>
+                <li><a href="/pet-project/cats/#zero-to-four-weeks">Zero to Four Weeks</a></li>
+                <li><a href="/pet-project/cats/#four-weeks-to-one-year">Four Weeks to One Year</a></li>
+                <li><a href="/pet-project/cats/#one-year-to-seven-years">One Year to Seven Years</a></li>
+                <li><a href="/pet-project/cats/#seven-years-and-older">Seven Years and Older</a></li>
               </ul>
             </li>
 
-            {/* Birds Dropdown */}
             <li className="nav-item dropdown">
-            <a href="/birds" className={`nav-link ${location.pathname.startsWith('/birds') ? 'active' : ''}`}>Birds</a>
+              <Link to="/birds" className={`nav-link ${location.pathname.startsWith('/birds') ? 'active' : ''}`}>Birds</Link>
               <ul className="dropdown-menu">
-                <li><a href="/birds/#info">Info</a></li>
-                <li><a href="/birds/#relational-needs">Relational Needs</a></li>
+                <li><a href="/pet-project/birds/#info">Info</a></li>
+                <li><a href="/pet-project/birds/#relational-needs">Relational Needs</a></li>
               </ul>
             </li>
           </ul>
 
-          {/* CTA Button */}
           <div className="cta-container">
-            <a href="/pexpert" className="consult-button">Consult A Pexpert Today!</a>
+            <Link to="/pexpert" className="consult-button">Consult A Pexpert Today!</Link>
           </div>
         </div>
       </div>

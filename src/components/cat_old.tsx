@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/catOld.css";
-import catOldImage from "../assets/cat-old.jpg"
+import catOldImage from "../assets/dance.jpg"
 
 const CatOld: React.FC = () => {
   return (
@@ -10,11 +10,17 @@ const CatOld: React.FC = () => {
         </div>
         <div className="old-right-container">
             <div className="old-header">
-                <h2>Seven Years and More</h2>
+                <h2>Entertainment</h2>
             </div>
             <div className="old-description">
                 <p>
-                Much like many living organisms, the body begins to deteriorate and experience a lot of changes. Cats at this age should eat less fats and calories and more quality proteins. This means when you are purchasing packaged foods for your cat, look for food that states a particular protein (such as "salmon") and not just a category (such as fish). This usually means they are byproducts, or combinations, of lesser quality proteins.
+                Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano.</p>
+                <br></br>
+                <br></br>
+                <p>However, there are other things to do, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling. </p>
+                <br></br>
+                <br></br>    
+                <p>Also, a nine-hole golf course should be operational by next year. Many of these activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay. 
                 </p>
             </div>
         </div>

@@ -4,7 +4,7 @@
   width: 100%;
   min-width: 450px;
   height: auto;
-  background-color: #003B6D;
+  background-color: white;
   padding: 2rem 1rem;
   box-sizing: border-box;
 }
@@ -27,14 +27,14 @@
 }
 
 .seven-header h2 {
-  color: #BDBDBD;
+  color: black;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
 .seven-description p {
   font-size: 1rem;
-  color: white;
+  color: black;
   margin: 5rem 0;
   max-width: 600px;
 }

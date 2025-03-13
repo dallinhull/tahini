@@ -19,7 +19,8 @@
   align-items: center;
   padding-left: 30%;
   text-align: right;
-  color: white;
+  color: #CE1126;
+  -webkit-text-stroke: 1px black;
 }
 
 .banner-heading {

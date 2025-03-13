@@ -5,8 +5,7 @@ const PexpertBanner: React.FC = () => {
   return (
     <div className="pexpert-banner">
         <div className="pexpert-banner-content">
-            <h1 className="pexpert-banner-heading">Be the best support to your pet</h1>
-
+            <h1 className="pexpert-banner-heading">Frequently Asked Questions</h1>
         </div>
     </div>
   );

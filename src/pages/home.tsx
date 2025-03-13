@@ -1,12 +1,9 @@
 import React from 'react';
 import Head from '../components/head.tsx'
 import Navbar from '../components/navbar';
-import PetBanner from '../components/pet_banner.tsx';
-import MissionSection from '../components/mission';
-import PexpertSection from '../components/pexpert';
-import HealthSection from '../components/health';
-import AdoptionHelp from '../components/adopt';
+import AboutSection from '../components/home_about';
 import Footer from '../components/footer.tsx';
+import HomeBanner from '../components/home_banner.tsx';
 
 
 const Home: React.FC = () => {
@@ -14,18 +11,9 @@ const Home: React.FC = () => {
     <>
       <Head />
       <Navbar />
-      <PetBanner />
-      <div id='our-mission'>
-      <MissionSection />
-      </div>
-      <div id='pexpert-section'>
-      <PexpertSection />
-      </div>
-      <div id='benefits'>
-      <HealthSection />
-      </div>
-      <div id='adopt'>
-      <AdoptionHelp />
+      <HomeBanner />
+      <div id='about'>
+      <AboutSection />
       </div>
       <Footer />
     </>

@@ -2,23 +2,25 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import "./app.css";
 import Home from './pages/home'; 
-import Dogs from './pages/dogs.tsx';
-import Cats from './pages/cats.tsx';
-import Birds from './pages/birds.tsx';
-import Pexpert from './pages/pexpert.tsx';
+import Cuisine from './pages/cuisine.tsx';
+import Lodging from './pages/lodging.tsx';
+import Sights from './pages/sights.tsx';
+import Transportation from './pages/transportation.tsx';
+import FAQ from './pages/faq.tsx';
 import './css/navbar.css';
 
 
 const App: React.FC = () => {
   return (
-    <Router basename = "/pet-project">
+    <Router basename = "/tahini">
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/dogs" element={<Dogs />} />
-          <Route path="/cats" element={<Cats />} />
-          <Route path="/birds" element={<Birds />} />
-          <Route path="/pexpert" element={<Pexpert />} />
+          <Route path="/cuisine" element={<Cuisine />} />
+          <Route path="/lodging" element={<Lodging />} />
+          <Route path="/sights" element={<Sights />} />
+          <Route path="/transportation" element={<Transportation />} />
+          <Route path="/faq" element={<FAQ />} />
 
         </Routes>
       </div>

@@ -1,0 +1,85 @@
+.dog-banner {
+  width: 100%;
+  min-width: 450px;
+  height: 70vh;
+  min-height: 500px;
+  background-image: url('../assets/cuisine_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.banner-content-one {
+  width: 30%;
+}
+
+.banner-content-two {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 2rem;
+  color: #CE1126;
+  -webkit-text-stroke: 1px black;
+}
+
+.dog-banner-heading {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  margin-right: 14rem;
+}
+
+.dog-banner-consult-button {
+  text-decoration: none;
+  background-color: #003B6D;
+  color: white;
+  padding: 0.75rem 2.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.dog-banner-consult-button:hover {
+  background-color: #6699CC;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .dog-banner {
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .banner-content-one,
+  .banner-content-two {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dog-banner-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+
+  .dog-banner-consult-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dog-banner {
+    height: 45vh;
+  }
+
+  .dog-banner-heading {
+    font-size: 2rem;
+  }
+}

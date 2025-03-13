@@ -7,5 +7,5 @@ export default defineConfig({
     outDir: 'build' // Change from 'dist' to 'build'
   },
   plugins: [react()],
-  base: '/pet-project/'
+  base: '/tahini/'
 })

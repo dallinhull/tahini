@@ -11,7 +11,7 @@
 }
 
 nav {
-  background-color: #6699CC;
+  background-color: #738b13;
   color: white;
   display: flex;
   width: 100%;
@@ -79,7 +79,7 @@ nav {
 }
 
 .dropdown-menu li a {
-  color: #003B6D;
+  color: #238841;
   text-decoration: none;
   font-size: 14px;
   display: block;
@@ -107,18 +107,18 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #676767;
+  background-color: #238841;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.cta-link {
+.faq-link {
   margin-left: auto;
 }
 
-.cta-link .consult-button {
+.faq-link .faq-button {
   text-decoration: none;
   background-color: white;
-  color: #6699CC;
+  color: #238841;
   margin-right: .75rem;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -126,14 +126,14 @@ nav {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.cta-link .consult-button:hover {
-  background-color: #676767;
+.faq-link .faq-button:hover {
+  background-color: #238841;
   color: white;
   height: 100%;
 }
 
 .navbar {
-  background-color: #6699CC;
+  background-color: #256940;
   width: 100%;
   height: 80px;
   position: relative;
@@ -186,7 +186,7 @@ nav {
 }
 
 .nav-link:hover {
-  background-color: #676767;
+  background-color: #238841;
 }
 
 .dropdown-menu {
@@ -206,7 +206,7 @@ nav {
 }
 
 .dropdown-menu li a {
-  color: #003B6D;
+  color: #64B8B1;
   padding: 0.5rem 1rem;
   display: block;
   text-decoration: none;
@@ -216,13 +216,13 @@ nav {
   background-color: #f0f0f0;
 }
 
-.cta-container {
+.faq-container {
   margin-left: 2rem;
 }
 
-.consult-button {
+.faq-button {
   background-color: white;
-  color: #6699CC;
+  color: #238841;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -230,7 +230,7 @@ nav {
   transition: all 0.3s ease;
 }
 
-.consult-button:hover {
+.faq-button:hover {
   background-color: #676767;
   color: white;
 }
@@ -301,7 +301,7 @@ nav {
     position: absolute;
     top: 80px;
     right: 0;
-    background-color: #6699CC;
+    background-color: #238841;
     padding: 1rem;
     flex-direction: column;
     width: 250px;
@@ -343,12 +343,12 @@ nav {
     padding: 1rem;
   }
 
-  .cta-container {
+  .faq-container {
     margin: 1rem 0 0 0;
     text-align: center;
   }
 
-  .consult-button {
+  .faq-button {
     display: block;
     width: 100%;
     text-align: center;
@@ -356,6 +356,6 @@ nav {
 }
 
 .nav-link.active {
-  background-color: #004080; /* Darker shade */
-  color: #FFD700; /* Highlight color */
+  background-color: #238841; /* Darker shade */
+  color: white; /* Highlight color */
 }
